@@ -1,7 +1,5 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/process_payments
-    username: postgres
-    password: Root@123456
+    url: ${DATABASE_URL}
   jpa:
     show-sql: false
