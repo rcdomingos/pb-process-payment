@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.1.15:5432/process_payments
+    username: postgres
+    password: Root@123456
+  jpa:
+    show-sql: true

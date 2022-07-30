@@ -1,0 +1,12 @@
+app-config:
+  apikey: 7d994852-218a-4e05-b50a-f7cff7301f1d
+
+
+spring:
+  application:
+    name: "@project.name@"
+  jpa:
+    open-in-view: false
+  profiles:
+    active: ${APP_PROFILE:dev}
+
