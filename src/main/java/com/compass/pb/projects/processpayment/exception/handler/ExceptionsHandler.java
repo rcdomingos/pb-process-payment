@@ -1,8 +1,9 @@
-package com.compass.pb.projects.processpayment.handler;
+package com.compass.pb.projects.processpayment.exception.handler;
 
 import com.compass.pb.projects.processpayment.domain.DefaultMessageResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -44,6 +45,14 @@ public class ExceptionsHandler {
         });
 
         DefaultMessageResponse err = new DefaultMessageResponse(String.valueOf(status.value()), errorMessage);
+        return ResponseEntity.status(status).body(err);
+    }
+
+    @ExceptionHandler(BadCredentialsException.class)
+    public ResponseEntity<DefaultMessageResponse> handleAccessDeniedException(BadCredentialsException e, HttpServletRequest request) {
+        HttpStatus status = HttpStatus.UNAUTHORIZED;
+        String errorMenssagem = e.getMessage().replace("Usuário", "ClientId").replace("senha", "apikey");
+        DefaultMessageResponse err = new DefaultMessageResponse(String.valueOf(status.value()), errorMenssagem);
         return ResponseEntity.status(status).body(err);
     }
 

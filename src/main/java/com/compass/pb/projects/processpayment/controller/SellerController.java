@@ -35,4 +35,11 @@ public class SellerController {
         if (!internalApikey.equals(apikey)) throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
         return ResponseEntity.ok(service.getSellerById(id));
     }
+
+    @GetMapping
+    public ResponseEntity<SellerResponse> getSeller(@RequestParam String clientId,
+                                                    @RequestHeader(value = "apikey") String apikey) {
+        if (!internalApikey.equals(apikey)) throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
+        return ResponseEntity.ok(service.getSellerByFilter(clientId));
+    }
 }

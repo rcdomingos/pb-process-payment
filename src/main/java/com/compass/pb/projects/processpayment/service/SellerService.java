@@ -37,4 +37,9 @@ public class SellerService {
         SellerEntity entity = repository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
         return mapper.map(entity, SellerResponse.class);
     }
+
+    public SellerResponse getSellerByFilter(String clientId) {
+        SellerEntity entity = repository.findByClientId(clientId).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+        return mapper.map(entity, SellerResponse.class);
+    }
 }
