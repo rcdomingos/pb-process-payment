@@ -1,6 +1,6 @@
 package com.compass.pb.projects.processpayment.security;
 
-import com.compass.pb.projects.processpayment.domain.DefaultMessageResponse;
+import com.compass.pb.projects.processpayment.domain.response.DefaultMessageResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;

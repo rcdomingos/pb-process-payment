@@ -1,7 +1,7 @@
 package com.compass.pb.projects.processpayment.controller;
 
-import com.compass.pb.projects.processpayment.domain.SellerRequest;
-import com.compass.pb.projects.processpayment.domain.SellerResponse;
+import com.compass.pb.projects.processpayment.domain.request.SellerRequest;
+import com.compass.pb.projects.processpayment.domain.response.SellerResponse;
 import com.compass.pb.projects.processpayment.service.SellerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;

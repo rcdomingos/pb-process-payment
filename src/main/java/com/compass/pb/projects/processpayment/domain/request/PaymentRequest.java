@@ -1,4 +1,4 @@
-package com.compass.pb.projects.processpayment.domain;
+package com.compass.pb.projects.processpayment.domain.request;
 
 import com.compass.pb.projects.processpayment.constants.CurrencyType;
 import com.compass.pb.projects.processpayment.constants.PaymentType;

@@ -1,6 +1,6 @@
 package com.compass.pb.projects.processpayment.exception.handler;
 
-import com.compass.pb.projects.processpayment.domain.DefaultMessageResponse;
+import com.compass.pb.projects.processpayment.domain.response.DefaultMessageResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;

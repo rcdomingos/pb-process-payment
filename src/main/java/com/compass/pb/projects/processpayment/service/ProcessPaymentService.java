@@ -1,10 +1,10 @@
 package com.compass.pb.projects.processpayment.service;
 
 import com.compass.pb.projects.processpayment.constants.*;
-import com.compass.pb.projects.processpayment.domain.CardRequest;
+import com.compass.pb.projects.processpayment.domain.request.CardRequest;
 import com.compass.pb.projects.processpayment.domain.PaymentAuthorization;
-import com.compass.pb.projects.processpayment.domain.PaymentRequest;
-import com.compass.pb.projects.processpayment.domain.PaymentResponse;
+import com.compass.pb.projects.processpayment.domain.request.PaymentRequest;
+import com.compass.pb.projects.processpayment.domain.response.PaymentResponse;
 import com.compass.pb.projects.processpayment.dto.PaymentDto;
 import com.compass.pb.projects.processpayment.entity.PaymentEntity;
 import com.compass.pb.projects.processpayment.repository.PaymentRepository;

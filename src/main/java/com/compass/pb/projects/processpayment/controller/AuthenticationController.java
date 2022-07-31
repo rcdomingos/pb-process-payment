@@ -1,6 +1,6 @@
 package com.compass.pb.projects.processpayment.controller;
 
-import com.compass.pb.projects.processpayment.domain.TokenRequest;
+import com.compass.pb.projects.processpayment.domain.request.TokenRequest;
 import com.compass.pb.projects.processpayment.domain.response.TokenResponse;
 import com.compass.pb.projects.processpayment.service.TokenService;
 import lombok.RequiredArgsConstructor;

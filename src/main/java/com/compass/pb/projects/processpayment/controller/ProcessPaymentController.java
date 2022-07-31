@@ -1,7 +1,7 @@
 package com.compass.pb.projects.processpayment.controller;
 
-import com.compass.pb.projects.processpayment.domain.PaymentRequest;
-import com.compass.pb.projects.processpayment.domain.PaymentResponse;
+import com.compass.pb.projects.processpayment.domain.request.PaymentRequest;
+import com.compass.pb.projects.processpayment.domain.response.PaymentResponse;
 import com.compass.pb.projects.processpayment.service.ProcessPaymentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
